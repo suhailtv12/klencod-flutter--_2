@@ -1,0 +1,41 @@
+name: flutter_app
+description: A professional task manager and notes app built with Flutter.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # دعم اللغة العربية واتجاه الشاشة
+  flutter_localizations:
+    sdk: flutter
+
+  # التوافق مع فلاتر الحديث
+  intl: ^0.20.3
+
+  # الحفظ المحلي للمذكرات
+  shared_preferences: ^2.2.2
+
+  # حماية المذكرات بقفل الجهاز (بصمة / نمط / رمز)
+  local_auth: ^2.2.0
+
+  # تم التحديث إلى 7.0.0 لحل مشكلة Registrar مع أندرويد
+  speech_to_text: ^7.0.0
+
+  # اختيار الصور والخلفيات
+  image_picker: ^1.1.2
+
+  # محرك بحث جوجل عبر API
+  http: ^1.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
